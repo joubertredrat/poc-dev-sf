@@ -1,6 +1,6 @@
 # Dev Test - Versão Symfony Framework
 
-Esta versão do teste foi programada usando o [Symfony Framework](https://symfony.com) versão 3.4.
+Esta versão do teste foi programada usando o [Symfony Framework](https://symfony.com) versão 3.4. Versão do projeto feita com Slim em [https://github.com/joubertredrat/poc-dev-slim](https://github.com/joubertredrat/poc-dev-slim).
 
 ## Execução
 
