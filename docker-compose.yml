@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+    dev-test-symfony-nginx:
+        build:
+            context: .
+            dockerfile: ./scripts/docker/nginx/Dockerfile
+        ports:
+            - 4000:4000
+        depends_on:
+            - dev-test-symfony-php-fpm
+    dev-test-symfony-php-fpm:
+        build:
+            context: .
+            dockerfile: ./scripts/docker/php-fpm/Dockerfile
