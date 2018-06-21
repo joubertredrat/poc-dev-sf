@@ -33,6 +33,8 @@ RUN echo "parameters:" > /var/www/html/app/config/parameters.yml && \
     echo "    mailer_password: null" >> /var/www/html/app/config/parameters.yml && \
     echo "    secret: ThisTokenIsNotSoSecretChangeIt" >> /var/www/html/app/config/parameters.yml
 
+RUN mkdir /var/www/html/var/data
+
 RUN php /var/www/html/bin/console doctrine:database:create
 
 RUN php /var/www/html/bin/console doctrine:schema:update --force
